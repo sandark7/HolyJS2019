@@ -49,7 +49,7 @@
     left: 875px;
     box-sizing: border-box;
     padding-top: 15px;
-    width: var(--ribbon-size);
+    /*width: var(--ribbon-size);*/
     height: calc(var(--ribbon-size) * 2);
     background-image: url('ribbon.svg');
     background-size: cover;
