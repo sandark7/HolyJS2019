@@ -13,22 +13,10 @@
     <header class="caption">
       <h1>Soft Effect: Исследование развития навыков</h1>
     </header>
-    <section id="intro" class="slide black clear">
-      <embed src="sounds/intro.m4a" width="0"></embed>
-      <video src="pictures/intro.mp4" autoplay="" muted="" class="cover" width="100%"></video>
-    </section>
-    <section id="" class="slide black clear" style="padding: 100px 50px 0;">
-      <div class="wrapper animation">
-        <p class="animation">В 2019 году исследователи обнаружили, что разработчикам для успешного развития карьеры важнее развивать soft skills, а не hard skills. В последующие несколько месяцев было проведено исследование, позволяющее проанализировать важность навыков и динамику влияния их роста. Основой исследования была статистика, обеспечивающая интересную доказательную базу.</p>
-        <p class="animation">Они назвали это величайшим открытием в истории разработки.</p>
-        <p class="animation">Некоторые исследователи называют это…</p>
-      </div>
-    </section>
-    <section id="cover" class="slide black clear">
-      <img src="pictures/logo.png" class="cover w"/>
+    <section id="" class="slide black clear">
     </section>
     <section id="" class="slide black clear intro">
-      <img src="pictures/fwlogo.png" class="cover"/>
+      <video id="intro" src="pictures/intro.mp4" class="cover" width="100%"></video>
     </section>
     <section id="" class="slide label-header rbn">
       <h2>Кто я?</h2>
@@ -581,6 +569,7 @@
         <li>Николай Тупицин (ДомКлик)</li>
         <li>Олег Тишутин (IPONWEB)</li>
         <li>Никита Дубко (Яндекс)</li>
+        <li>Зар Захаров</li>
         <li>Юлия Компаниец (IPONWEB)</li>
         <li>Анастасия Дементьева (IPONWEB)</li>
         <li>Мария Лемешонок (Яндекс)</li>
@@ -595,5 +584,15 @@
     </section>
     <div class="progress"></div>
     <script src="shower/shower.min.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('keyup', (e) => {
+        if (e.code === "ArrowRight" || e.code === "Space") {
+          console.log(window.location.hash);
+          if (window.location.hash === '#2') {
+            document.getElementById("intro").play();
+          };
+        }
+      });
+    </script>
   </body>
 </html>
