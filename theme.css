@@ -12,9 +12,8 @@ td {
 }
 h3 {
   font-family: 'PT Mono', sans-serif;
-  font-weight: 100;
+  font-weight: bold;
   font-style: italic;
-  color: #b12e27;
 }
 blockquote {
   font-family: 'PT Mono', sans-serif;
